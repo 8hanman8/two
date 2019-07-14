@@ -1,5 +1,8 @@
 # two
+Use below command to build jar,
+mvn clean install
+
 Use below command to build docker image,
-$set docker_host=<docker_host>
-$mvn clean install dockerfile:build
+set DOCKER_HOST=<docker_host>:2376 (Bydefault localhost is considered)
+mvn dockerfile:build
 
